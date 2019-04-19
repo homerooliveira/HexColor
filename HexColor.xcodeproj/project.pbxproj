@@ -10,6 +10,7 @@
 		8DBB0522226966DA00B79CDF /* HexColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBB0518226966DA00B79CDF /* HexColor.framework */; };
 		8DBB0527226966DA00B79CDF /* HexColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB0526226966DA00B79CDF /* HexColorTests.swift */; };
 		8DBB0529226966DA00B79CDF /* HexColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBB051B226966DA00B79CDF /* HexColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DBB05332269672B00B79CDF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB05322269672B00B79CDF /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		8DBB0521226966DA00B79CDF /* HexColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBB0526226966DA00B79CDF /* HexColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorTests.swift; sourceTree = "<group>"; };
 		8DBB0528226966DA00B79CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DBB05322269672B00B79CDF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				8DBB051B226966DA00B79CDF /* HexColor.h */,
 				8DBB051C226966DA00B79CDF /* Info.plist */,
+				8DBB05322269672B00B79CDF /* ColorExtension.swift */,
 			);
 			path = HexColor;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					8DBB0517226966DA00B79CDF = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					8DBB0520226966DA00B79CDF = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBB05332269672B00B79CDF /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		8DBB052D226966DA00B79CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.homero.code.HexColor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		8DBB052E226966DA00B79CDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		8DBB0530226966DA00B79CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HexColorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		8DBB0531226966DA00B79CDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HexColorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
